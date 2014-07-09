@@ -1,0 +1,4 @@
+# roles/openjdk/defaults/main.yml
+
+openjdk_pkg: openjdk-7-jdk
+openjdk_version: java-1.7.0-openjdk-amd64
