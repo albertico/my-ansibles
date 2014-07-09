@@ -2,10 +2,8 @@
 
 - name: Ruby-Install | Download ruby-install
   get_url: url=https://github.com/postmodern/ruby-install/archive/v{{ ruby_install_version }}.tar.gz dest=/tmp/ruby-install-{{ ruby_install_version }}.tar.gz
-
 - name: Ruby-Install | Extract ruby-install
   command: tar xzf ruby-install-{{ ruby_install_version }}.tar.gz chdir=/tmp/
-
-- name: Ruby-Install | Make install
+- name: Ruby-Install | Ensure ruby-install is installed (from sources)
   command: make install chdir=/tmp/ruby-install-{{ ruby_install_version }}
   sudo: yes
