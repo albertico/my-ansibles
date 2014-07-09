@@ -1,0 +1,4 @@
+# roles/pound/tasks/install.yml
+
+- name: Pound | Ensure pound is installed (from repository)
+  apt: pkg=pound state=present update_cache=yes

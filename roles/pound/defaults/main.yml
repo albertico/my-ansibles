@@ -1,0 +1,16 @@
+# roles/pound/defaults/main.yml
+
+# Enable pound at startup values:
+# 0 = false
+# 1 = true
+pound_enable_startup: 1
+
+pound_log_level: 1
+
+pound_alive_seconds: 30
+
+pound_socket_file: /var/run/pound/poundctl.socket
+
+pound_listen_address: 127.0.0.1
+
+pound_listen_port: 8080

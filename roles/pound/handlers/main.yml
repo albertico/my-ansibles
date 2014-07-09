@@ -1,0 +1,17 @@
+# roles/pound/handlers/main.yml
+
+- name: restart pound
+  service: name=pound state=restarted
+  sudo: yes
+
+- name: reload pound
+  service: name=pound state=reloaded
+  sudo: yes
+
+- name: start pound
+  service: name=pound state=started
+  sudo: yes
+
+- name: stop pound
+  service: name=pound state=stopped
+  sudo: yes
