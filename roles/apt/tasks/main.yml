@@ -1,0 +1,6 @@
+# roles/apt/tasks/main.yml
+
+- name: apt-get | Update apt cache
+  apt: update_cache=yes
+- name: apt-get | Upgrade installed packages
+  apt: upgrade=full
