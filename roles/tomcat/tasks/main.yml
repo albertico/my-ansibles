@@ -1,0 +1,5 @@
+# roles/tomcat/tasks/main.yml
+
+- include: install_package.yml
+  when: tomcat_install_method == "package"
+- include: configure.yml

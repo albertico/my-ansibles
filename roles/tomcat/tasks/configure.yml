@@ -1,0 +1,7 @@
+# roles/tomcat/tasks/configure.yml
+
+- name: Tomcat | Ensure tomcat-users.xml is up to date
+  template: src=tomcat-users.xml.j2 dest={{ tomcat_dir }}/tomcat-users.xml
+  #template: src=tomcat-users.xml.j2 dest={{ tomcat_dir }}/tomcat-users.xml owner=root group=root mode=0644
+  notify:
+    - restart tomcat

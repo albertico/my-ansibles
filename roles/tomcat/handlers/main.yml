@@ -1,0 +1,17 @@
+# roles/tomcat/handlers/main.yml
+
+- name: restart tomcat
+  service: name=tomcat7 state=restarted
+  sudo: yes
+
+- name: reload tomcat
+  service: name=tomcat7 state=reloaded
+  sudo: yes
+
+- name: start tomcat
+  service: name=tomcat7 state=started
+  sudo: yes
+
+- name: stop tomcat
+  service: name=tomcat7 state=stopped
+  sudo: yes

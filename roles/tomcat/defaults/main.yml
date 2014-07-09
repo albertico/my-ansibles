@@ -1,0 +1,20 @@
+# roles/tomcat/defaults/main.yml
+
+tomcat_install_method: "package"
+
+tomcat_dir: /etc/tomcat7/
+
+tomcat_pkg:
+  - tomcat7
+  - tomcat7-admin
+
+tomcat_roles:
+  - manager-gui
+  #- manager-status
+  #- manager-script
+  #- manager-jmx
+  #- another-role
+
+tomcat_users:
+  { username: admin, password: p@ssword1, roles: manager-gui }
+  #your_user: { username: USERNAME, password: PASSWORD, roles: ROLES }
