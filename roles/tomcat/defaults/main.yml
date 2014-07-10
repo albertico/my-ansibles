@@ -4,6 +4,8 @@ tomcat_install_method: "package"
 
 tomcat_dir: /etc/tomcat7/
 
+tomcat_service: tomcat7
+
 tomcat_pkg:
   - tomcat7
   - tomcat7-admin
@@ -16,5 +18,5 @@ tomcat_roles:
   #- another-role
 
 tomcat_users:
-  { username: admin, password: p@ssword1, roles: manager-gui }
-  #your_user: { username: USERNAME, password: PASSWORD, roles: ROLES }
+  - { username: "admin", password: "p@ssword1", roles: "manager-gui" }
+  #- { username: "USERNAME", password: "PASSWORD", roles: "ROLE1,ROLE2" }

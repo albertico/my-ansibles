@@ -33,11 +33,13 @@
   <user username="both" password="tomcat" roles="tomcat,role1"/>
   <user username="role1" password="tomcat" roles="role1"/>
 -->
+
 {% for role in tomcat_roles %}
   <role rolename="{{ role }}"/>
 {% endfor %}
 
 {% for user in tomcat_users %}
-  <user username="{{ user['username'] }}" password="{{ user['password'] }}" roles="{{ user['roles'] }}"/>
+  <user username="{{ user.username }}" password="{{ user.password }}" roles="{{ user.roles }}"/>
 {% endfor %}
+
 </tomcat-users>
