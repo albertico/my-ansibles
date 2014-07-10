@@ -1,6 +1,6 @@
 # roles/openjdk/tasks/main.yml
 
 - name: JDK | OpenJDK | Ensure OpenJDK is installed (from repository)
-  apt: pkg={{ openjdk_pkg }} state=present update_cache=yes
+  apt: pkg={{ openjdk_pkg }} state=latest update_cache=yes
 - name: JDK | OpenJDK | Update java alternative to OpenJDK (using update-java-alternatives)
   command: update-java-alternatives --set {{ openjdk_version }}
