@@ -1,6 +1,6 @@
 # roles/tomcat/tasks/install_package.yml
 
 - name: Tomcat | Ensure Tomcat is installed (from repository)
-  apt: pkg={{ item }} state=present update_cache=yes
+  apt: pkg={{ item }} state=latest update_cache=yes
   with_items:
     tomcat_pkg
