@@ -1,0 +1,9 @@
+# roles/chruby/tasks/main.yml
+
+- name: ChRuby | Download chruby
+  get_url: url=https://github.com/postmodern/chruby/archive/v{{ chruby_version }}.tar.gz dest=/tmp/chruby-{{ chruby_version }}.tar.gz
+- name: ChRuby | Extract chruby
+  command: tar xzf chruby-{{ chruby_version }}.tar.gz chdir=/tmp/
+- name: ChRuby | Ensure chruby is installed (from sources)
+  command: make install chdir=/tmp/chruby-{{ chruby_version }}
+  sudo: yes
