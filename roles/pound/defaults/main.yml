@@ -14,3 +14,7 @@ pound_socket_file: /var/run/pound/poundctl.socket
 pound_listen_address: 127.0.0.1
 
 pound_listen_port: 8080
+
+pound_default_file: /etc/default/pound
+
+pound_dir: /etc/pound

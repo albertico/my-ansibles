@@ -30,7 +30,7 @@ Control "{{ pound_socket_file }}"
 ######################################################################
 ## listen, redirect and ... to:
 
-## redirect all requests on listening port ("ListenHTTP") to the local webserver (see "Service" below):
+## redirect all requests on listen port ("ListenHTTP") to the local webserver (see "Service" below):
 ListenHTTP
 	Address {{ pound_listen_address }}
 	Port	{{ pound_listen_port }}

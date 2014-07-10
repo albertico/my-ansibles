@@ -1,6 +1,10 @@
 # roles/pound/tasks/configure.yml
 
-- name: Pound | Ensure pound default configuration is up to date.
-  template: src=pound.j2 dest=/etc/default/pound
+- name: Pound | Ensure pound default is up to date.
+  template: src=pound.j2 dest={{ pound_default_file }}
   notify:
+    - restart pound
+- name: Pound | Ensure pound.cfg is up to date.
+  template: src=pound.cfg.j2 dest={{ pound_dir }}/pound.cfg
+  notifiy:
     - restart pound
