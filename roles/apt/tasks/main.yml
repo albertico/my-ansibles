@@ -2,5 +2,7 @@
 
 - name: apt-get | Update apt cache
   apt: update_cache=yes
+  sudo: yes
 - name: apt-get | Upgrade installed packages
   apt: upgrade=full
+  sudo: yes
