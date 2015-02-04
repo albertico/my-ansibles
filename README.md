@@ -72,7 +72,7 @@ For details related to Roles structure and definition, please refer to the [Role
 
 ## Author
 
-### **Alberto A. Colón Viera** (Albertico)
+#### Alberto A. Colón Viera _(Albertico)_
 
 > **Web:** [alberti.co](http://alberti.co)  
 > **Twitter:** [@alberti_co](https://twitter.com/alberti_co)  
