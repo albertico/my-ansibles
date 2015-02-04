@@ -60,7 +60,7 @@ For details on Role-based Playbooks, please refer to the [Playbook Roles Docs](h
 
 ## Roles
 
-Each role definition may include the tasks, handlers, variables and templates (among other files) the define the role's behaviour and execution.  Changes could be made to a particular role, either by changing the defined variables or by extending the tasks, handlers or any other available feature.
+Each role definition may include the tasks, handlers, variables and templates (among other files) that define the role's behavior and execution.  Changes could be made to a particular role, either by changing the defined variables or by extending the tasks, handlers or any other available file.
 
 Having the roles and playbooks defined as a Git repository allows for the proper versioning of the playbook and roles definition based on your environments and requirements.
 
