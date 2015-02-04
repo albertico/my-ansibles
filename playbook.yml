@@ -1,0 +1,7 @@
+# playbook.yml
+
+- name: MyPlaybook
+  hosts: server-group
+  gather_facts: yes
+  roles:
+    - role: apt
