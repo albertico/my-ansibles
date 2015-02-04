@@ -1,0 +1,20 @@
+# roles/ruby/tasks/dependencies.yml
+
+- name: Ruby | Install ruby dependencies
+  apt: pkg={{ item }} state=latest update-cache=yes
+  with_items:
+    - build-essential
+    - git-core
+    - libreadline6-dev
+    - libyaml-dev
+    - libsqlite3-dev
+    - sqlite3
+    - libgdbm-dev
+    - libncurses5-dev
+    - libtool
+    - bison
+    - libffi-dev
+    - libdigest-hmac-perl
+    - unzip
+    - zlib1g
+    - zlib1g-dev

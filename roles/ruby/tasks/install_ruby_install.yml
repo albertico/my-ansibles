@@ -1,0 +1,4 @@
+# roles/ruby/tasks/install_ruby_install.yml
+
+- name: Ruby | Ensure ruby is installed (using ruby-install)
+  command: ruby-install {{ ruby }} {{ ruby_version }}

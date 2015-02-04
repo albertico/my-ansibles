@@ -1,0 +1,6 @@
+# roles/ruby/tasks/main.yml
+
+- include: dependencies.yml
+  when: ruby_install_dependencies == true
+- include: install_ruby_install.yml
+  when: ruby_install_method == "ruby-install"

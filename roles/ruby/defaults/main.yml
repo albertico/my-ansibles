@@ -1,0 +1,6 @@
+# roles/ruby/defaults/main.yml
+
+ruby_install_dependencies: true
+ruby_install_method: ruby-install
+ruby: ruby
+ruby_version: 2.1.2
